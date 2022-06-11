@@ -3,7 +3,7 @@ max-width: 800px;
 }
 body{
     background-image: url(./img/CH-093.png);
-    background-size: 120vh auto;
+    /* background-size: 100vh auto; */
     background-repeat: no-repeat;
     margin: 0 auto;
 }
@@ -72,7 +72,7 @@ td{
 .textBefore{
     width:40vw;
     position:relative;
-    left:290px;
+    left:240px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     font-size: 1.2em;
@@ -88,7 +88,7 @@ form{
     position: relative;
     top:60px;
     left:50px;
-    margin-bottom: 10%;
+    margin-bottom: 50px;
 }
 .btns{
     width: 50vw;
@@ -105,7 +105,7 @@ form{
 table{
     position:absolute;
     bottom:0px;
-    left:100px
+    left:5vw
 }
 
 .start{
