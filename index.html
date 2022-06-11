@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учим таблицу умножения</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="hello">
+        <!-- <img src="./img/free-png.ru-18.png" alt=""> -->
+      
+        <p class="textBefore">Ксюша, выбирай числа,на которые будем проверять умножение</p>
+       
+        <form action="#">
+            <input type="checkbox" class='inp' value="1"><span>1</span>
+            <input type="checkbox" class='inp' value="2"><span>2</span>
+            <input type="checkbox" class='inp' value="3"><span>3</span>
+            <input type="checkbox" class='inp' value="4"><span>4</span>
+            <input type="checkbox" class='inp' value="5"><span>5</span>
+            <input type="checkbox" class='inp' value="6"><span>6</span>
+            <input type="checkbox" class='inp' value="7"><span>7</span>
+            <input type="checkbox" class='inp' value="8"><span>8</span>
+            <input type="checkbox" class='inp' value="9"><span>9</span>
+            <input type="checkbox" class='inp' value="10"><span>10</span>
+            <div class="btns">
+                <div><input type="checkbox" class='all'><span>Выбрать все</span></div>
+                <input type="reset" value="Очистить" class="clear"/>
+            </div>
+        </form> <p class="textAfter">А теперь нажимай старт ,чтобы начать</p>
+        <button class="start">Старт</button>
+        <div class="wrap-game">
+            <div class="number first-number"></div>
+            <span>X</span>
+            <div class="number second-number"></div>
+            =
+            <div class="number ">
+                <input type="text" class="input result">
+            </div>
+        </div>
+        
+    </div>
+    <div class="winner">
+        <button>new game</button>
+    </div>
+    <table>
+        <tr><td colspan="2">Счет</td></tr>
+        <tr><td>Ксюша</td><td>Компьютер</td></tr>
+        <tr><td class="right">0</td><td class="wrong">0</td></tr>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
