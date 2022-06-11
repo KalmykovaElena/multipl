@@ -5,7 +5,11 @@ const first = document.querySelector(".first-number"),
   right = document.querySelector(".right"),
   wrong = document.querySelector(".wrong"),
   firstDisplay = document.querySelector(".hello"),
-  winner = document.querySelector(".winner");
+  winner = document.querySelector(".winner"),
+  textBefore = document.querySelector(".textBefore"),
+  rigtAnswer = document.querySelector(".rigtAnswer"),
+  numAns = document.querySelector(".numAns")
+  
 
 document.querySelector(".start").addEventListener("click", () => {
   if (
@@ -44,6 +48,19 @@ function checkNumber() {
     } else {
       countWrong += 1;
       wrong.innerHTML = countWrong;
+      numAns.innerHTML=answer
+      firstDisplay.style.display='none'
+      rigtAnswer.style.display='block'
+      window.addEventListener("click", () => {
+        firstDisplay.style.display='block'
+      rigtAnswer.style.display='none'
+    });
+    window.addEventListener("keydown", (event) => {
+      if (event.keyCode == 13) {
+        firstDisplay.style.display='block'
+        rigtAnswer.style.display='none'
+      }
+    });
     }
     result.value = null;
     getNumber();

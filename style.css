@@ -3,7 +3,7 @@ max-width: 800px;
 }
 body{
     background-image: url(./img/CH-093.png);
-    /* background-size: 100vh auto; */
+    background-size: 100vh auto;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
@@ -18,7 +18,7 @@ body{
 }
 .wrap-game{
     display: flex;
-    width: 44vw;
+    width: 230px;
     justify-content: end;
     margin-left:180px;
     align-items: center;
@@ -46,7 +46,7 @@ td{
    font-weight: 900;
 }
  tr{
-    line-height: 7vh;
+    line-height: 24px;
 }
 .all {
     zoom: 3;
@@ -66,6 +66,7 @@ td{
 .hello{
     position: relative;
     height: 40vh;
+    width:500px;
     box-sizing: border-box;
     padding-top: 20px;
 }
@@ -104,8 +105,8 @@ form{
 }
 table{
     position:absolute;
-    bottom:0px;
-    left:5vw
+    bottom:100px;
+    left:20px
 }
 
 .start{
@@ -113,4 +114,22 @@ table{
     background-color: rgb(224, 14, 14);
     height: 5vh;
     color: beige;
+}
+.rigtAnswer{
+    width:300px;
+    height:300px;
+    border: 4px solid red;
+    font-size: 24px;
+    font-style: italic;
+    margin: 0 auto;
+}
+.rigtAnswer{
+    display: none;
+    position: absolute;
+    top:15%;
+    left: 15%;
+    padding-top: 15%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2.5em;
 }
